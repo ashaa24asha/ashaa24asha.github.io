@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 class="heading">Form to be filled</h1>
+
+    <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container
+       {
+           border-radius: 5px;
+           background-color: rgb(240, 236, 236);
+           padding: 10px;
+       } 
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip01">First name</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Firstname" required>
+                <div class="valid-tooltip">
+              <br>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationTooltip02">Last name</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Lastname" required>
+                <div class="valid-tooltip">
+                    <br>
+                </div>
+             </div>
+            </div>
+<br>
+<div class="form-row">
+              <label><b>Gender</b></label>
+              <label for="male-gender">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="male-gender"
+                value="male"
+                required
+              />
+              <label for="female-gender">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                id="female-gender"
+                value="female"
+                required
+              />
+            </div>
+    <br>
+    <div class="form-row">
+              <label for="course"><b>Select course</b></label>
+              <select id="course" name="course">
+                <option value="DSA">DSA</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="Fullstack">Fullstack</option>
+              </select>
+            </div>
+
+            <br>
+
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                Please provide a valid city.
+                <br>
+                <label for="validationTooltip03">City</label>
+                <input type="text" class="form-control" id="validationTooltip03" required>
+               
+                <div class="invalid-tooltip">
+                  <br>
+                </div>
+              </div>
+              Please select a valid state.
+              <div class="col-md-3 mb-3">
+                <label for="validationTooltip04">State</label>
+                <select class="custom-select" id="validationTooltip04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>...</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                                  </div>
+                                  <br>
+              </div>
+              <div class="col-md-3 mb-3">
+                Please provide a valid zip.
+                <br>
+                <label for="validationTooltip05">Zip</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip">
+                  <br>
+
+                </div>
+              </div>
+             
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+    </div>
+      
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

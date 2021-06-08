@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Q, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       
+body {
+    background-color: #413D3D;
+}
+
+.grid {
+ 
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border: 2px solid #cbcbcb;
+    
+}
+
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: black;
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+    
+}
+
+#res
+{
+    font-size: large;
+}
+
+    </style>
+
+    <div class="grid">
+        <div id="quiz">
+            <h1>Check your Knowledge</h1>
+            <hr style="margin-bottom: 20px">
+            <div class="Q">
+    Q1. What is HTML?<br>
+    <input type="radio" name="question1" id="correct1" >Hyper Text Markup Language <br>
+    <input type="radio" name="question1" >Java Script<br>
+    <input type="radio" name="question1" >CSS<br>
+    <input type="radio" name="question1" >React js<br>
+
+    <br>
+
+    Q2. JS stands for?<br>
+    <input type="radio" name="question2" >Hyper Text Markup Language<br>
+    <input type="radio" name="question2" id="correct2" >Java Script<br>
+    <input type="radio" name="question2" >CSS<br>
+    <input type="radio" name="question2" >React js<br>
+
+    <br>
+
+    Q3. Which language is used for styling?<br>
+    <input type="radio" name="question3" >Hyper Text Markup Language<br>
+    <input type="radio" name="question3" >Java Script<br>
+    <input type="radio" name="question3" id="correct3" >CSS<br>
+    <input type="radio" name="question3" >React js<br>
+
+    <br>
+
+    Q4. The "function" and " var" are known as:?<br>
+    <input type="radio" name="question4" >Keywords<br>
+    <input type="radio" name="question4" >Data types<br>
+    <input type="radio" name="question4" id="correct4" >Declaration statements<br>
+    <input type="radio" name="question4" >Prototypes<br>
+
+    <br>
+
+    Q5. Which one of the following is an ternary operator:?<br>
+    <input type="radio" name="question5" id="correct5" > ?<br>
+    <input type="radio" name="question5" > : <br>
+    <input type="radio" name="question5" > -<br>
+    <input type="radio" name="question5" > +<br>
+
+    <br>
+
+    <input id="res" type="submit" name="submit" value="Submit Quiz" onclick="result()">
+</div>
+</div>
+</div>
+
+    <script type="text/javascript">
+
+    function result(){
+        var score=0;
+        if(document.getElementById('correct1').checked)
+        {
+            score++;
+        }
+        if(document.getElementById('correct2').checked)
+        {
+            score++;
+        }
+        if(document.getElementById('correct3').checked)
+        {
+            score++;
+        }
+        if(document.getElementById('correct4').checked)
+        {
+            score++;
+        }
+        if(document.getElementById('correct5').checked)
+        {
+            score++;
+        }
+
+        document.write("Your Score is:" +score);
+
+    }
+
+   
+
+    
+    </script>
+
+   
+
+</body>
+</html> 
